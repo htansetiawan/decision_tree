@@ -68,7 +68,7 @@ To add more unittests, add to `decision_tree_test.py`.
 
 # Dataset
 
-There are two sample datasets in `dataset` folder. The `animals.csv` was the original dataset and the `animals_clean.csv` is the dataset with the feature values transformed into integers. Current limitation of the library, it requires integer feature values for the current version.
+There are two sample datasets in `dataset` folder. The `animals.csv` was the original dataset and the `normalized_animals.csv` is the dataset with the feature values transformed into integers. Current limitation of the library, it requires integer feature values for the current version.
 
 # Future Works 
 

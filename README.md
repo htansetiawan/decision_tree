@@ -38,3 +38,9 @@ print(predictions)
 
 Please look at the `decision_tree_playground.ipynb` for a working example how to train a DecisionTree and run prediction!
 
+# Dataset
+
+There are two datasets in `dataset` folder. The `animals.csv` was the original dataset and the `animals_clean.csv` is the dataset with values transformed into integers.
+The implementation of the library requires integer feature values for the current version.
+
+As a future work, the library could handle the string features value.

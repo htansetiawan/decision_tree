@@ -7,6 +7,7 @@ the root node and selecting the best feature and threshold to split the data at 
 
 - Miniconda env
 - Python 3.9
+- Jupyter Notebook
 
 To install the required packages from the conda environment:
 

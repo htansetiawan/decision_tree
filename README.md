@@ -16,6 +16,7 @@ Decision Tree relatively fast to train, and make it a good choice for tasks wher
 - Miniconda env
 - Python 3.9
 - Jupyter Notebook
+- pytest
 
 To install the required packages from the conda environment:
 
@@ -55,6 +56,16 @@ print(cls)
 
 Please look at the `decision_tree_playground.ipynb` for a working example how to train a DecisionTree and run prediction!
 
+# Unittest
+
+To run unittest:
+
+```
+pytest
+```
+
+To add more unittests, add to `decision_tree_test.py`.
+
 # Dataset
 
 There are two sample datasets in `dataset` folder. The `animals.csv` was the original dataset and the `animals_clean.csv` is the dataset with the feature values transformed into integers. Current limitation of the library, it requires integer feature values for the current version.
@@ -63,7 +74,7 @@ There are two sample datasets in `dataset` folder. The `animals.csv` was the ori
 
 - Handle string feature values
 - Add max depth regularization
-- Add unittests
+- Add more unittests
 - Test with larger dataset
 - Add visualizer to describe the generated tree
 

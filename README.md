@@ -40,7 +40,7 @@ Below is an example of training a DecisionTree model on a sample animal data:
 import pandas as pd
 from decision_tree import DecisionTreeClassifier
 
-df = pd.read_csv('dataset/animals_clean.csv')
+df = pd.read_csv('dataset/normalized_animals.csv')
 
 # Split the DataFrame into features (X) and target (y).
 X = df[['legs', 'color']].values

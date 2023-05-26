@@ -41,6 +41,19 @@ class DecisionTreeClassifier:
                 node = node['right']
         return node['label']
 
+    def print_tree(self, labels):
+        self._print_tree(self.tree, labels)
+
+    def _print_tree(self, node, labels, depth=0):
+        if node['leaf']:
+            label_idx = node['label']
+            label = labels[label_idx] if label_idx is not None else 'Unknown'
+            print(f"{depth * ' '} - Class: {label} Leaf: {node['leaf']}")
+        else:
+            print(f"{depth * ' '} - Feature: {node['feature_idx']} < {node['threshold']}")
+            self._print_tree(node['left'], labels, depth + 1)
+            self._print_tree(node['right'], labels, depth + 1)
+
     def _build_tree(self, features, targets):
         """Recursively builds the decision tree.
 
